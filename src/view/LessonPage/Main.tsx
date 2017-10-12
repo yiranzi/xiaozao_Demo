@@ -1,4 +1,3 @@
-//这是一个
 
 import * as React from "react";
 import * as className from "./style/style.less";
@@ -24,12 +23,11 @@ class Main extends React.Component<PropsTypes, StateTypes> {
         this.onHomeWorkShowClick = this.onHomeWorkShowClick.bind(this);// 点击显示作业列表
         this.onClickHomeWorkList = this.onClickHomeWorkList.bind(this);// 点击作业列表
 
-        //
         this.state = {
-            currentChapterIndex: 0,
-            currentChapterClick: 0,
-            currentSubIndex: 0,
-            showHomeWork: false,
+            currentChapterIndex: 0,// 用户选中的章节
+            currentChapterClick: 0,// 用户点击的章节
+            currentSubIndex: 0, // 用户选中的小节
+            showHomeWork: false,// 是否显示作业
         }
     }
 
