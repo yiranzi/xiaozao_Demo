@@ -1,6 +1,3 @@
-/**
- * Created by ichangtou on 2017/8/30.
- */
 
 import * as React from "react";
 import * as className from "./style/style.less";
@@ -96,6 +93,7 @@ class LessonList extends React.Component<PropsTypes, StateTypes> {
         let arr = [];
         let styleContent = {}
         for ( let i = 0; i < chapter.sub.length; i++ ) {
+            // 如果小节选中 并且 章节也选中
             if(i == this.props.currentSubIndex && currentChapter == this.props.currentChapterIndex) {
                 styleContent = {
                     color: 'red',

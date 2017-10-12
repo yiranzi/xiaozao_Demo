@@ -104,12 +104,12 @@ class Main extends React.Component<PropsTypes, StateTypes> {
         </div>)
     }
 
-    //
+    // 点击问题列表
     onClickHomeWorkList(questionId) {
         this.getQuestionIndex(questionId);
     }
 
-    //
+    // 根据问题id得到当前想查看的问题 并设置选中
     getQuestionIndex(questionId) {
         let chapter;
         let innerContent;
@@ -128,6 +128,7 @@ class Main extends React.Component<PropsTypes, StateTypes> {
     }
 }
 
+// 默认数据
 Main.defaultProps = {
     // 获取到的课程信息
     lessonInfo: {

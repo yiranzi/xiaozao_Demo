@@ -1,6 +1,4 @@
-/**
- * Created by ichangtou on 2017/8/30.
- */
+
 
 import * as React from "react";
 import * as className from "./style/style.less";
@@ -8,9 +6,9 @@ import * as className from "./style/style.less";
 
 
 interface PropsTypes {
-    chapterTitle: String,
-    chapterContent: String,
-    onHomeWorkShowClick: Function,
+    chapterTitle: String, // 标题
+    chapterContent: String, // 内容
+    onHomeWorkShowClick: Function, //按钮回调
 }
 
 

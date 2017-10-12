@@ -1,6 +1,4 @@
-/**
- * Created by ichangtou on 2017/8/30.
- */
+
 
 import * as React from "react";
 import * as className from "./style/style.less";
@@ -15,8 +13,8 @@ interface PropsTypes {
             id: Number,
         }
     ]
-    onHomeWorkShowClick: Function, //
-    onClickHomeWorkList: Function,
+    onHomeWorkShowClick: Function, // 点击显示作业的按钮
+    onClickHomeWorkList: Function, // 点击某一道题
 }
 
 interface StateTypes {
@@ -48,6 +46,7 @@ class HomeWorkList extends React.Component<PropsTypes, StateTypes> {
         this.props.onHomeWorkShowClick(false);
     }
 
+    // 问题列表
     renderQuestionList() {
         let arr = [];
         for ( let i = 0; i < this.props.homeWorkInfo.length; i++ ) {
@@ -61,6 +60,7 @@ class HomeWorkList extends React.Component<PropsTypes, StateTypes> {
         </div>)
     }
 
+    // 点击问题列表
     onClickHomeWorkList(id) {
         this.props.onClickHomeWorkList(id);
     }
