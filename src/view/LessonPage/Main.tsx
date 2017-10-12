@@ -1,4 +1,4 @@
-
+//这是主界面 需要根据用户选择获取 对应章节的内容 并将数据传给子组件完成渲染
 import * as React from "react";
 import * as className from "./style/style.less";
 

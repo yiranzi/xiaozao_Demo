@@ -15,9 +15,9 @@ interface PropsTypes {
                     chapterTitle: String,
                     sub: [
                         {
-                            subTitle: String,
-                            type: String,
-                            id: Number,
+                            subTitle: String, // 子标题
+                            type: String, // 标识是课程还是作业
+                            id: Number, // 编号
                         }
                     ]
                 }

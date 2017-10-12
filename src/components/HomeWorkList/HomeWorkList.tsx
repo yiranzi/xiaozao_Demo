@@ -10,7 +10,7 @@ interface PropsTypes {
         {
             title: String,
             content: String,
-            id: Number,
+            id: Number, //题目id 回传id查找对应的题目
         }
     ]
     onHomeWorkShowClick: Function, // 点击显示作业的按钮
